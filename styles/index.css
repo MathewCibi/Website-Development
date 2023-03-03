@@ -138,7 +138,15 @@ a {
 }
   
 .fancy:hover > .outer:nth-child(12) {
-    transform: translate(120%, -30%) rotate(-10deg);
+    transform: translate(80%, -30%) rotate(-10deg);
+}
+
+.fancy:hover > .outer:nth-child(13) {
+    transform: translate(80%, 20%) rotate(-10deg);
+}
+
+.fancy:hover > .outer:nth-child(14) {
+    transform: translate(100%, -40%) rotate(-5deg);
 }
   
 /* -- YouTube Link Styles -- */
