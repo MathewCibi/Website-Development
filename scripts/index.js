@@ -33,5 +33,5 @@ const enhance = id => {
   });
 }
 
-enhance("channel-link");
+enhance("channel_link");
 print('Working')
