@@ -30,9 +30,30 @@
 }
 
 #title {
-    text-decoration: underline;
+    text-decoration: none;
 }
   
+#underline {
+    display: inline-block;
+    padding-bottom: 0.25rem; /* defines the space between text and underline */
+    position: relative;
+}
+
+#underline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgb(0, 255, 0);
+    transition: width 0.25s ease-out;
+}
+
+#underline:hover::before {
+    width: 100%;
+}
+    
 body {
     height: 100vh;
     background-color: black;
@@ -94,7 +115,7 @@ a {
 }
   
 .fancy:hover > .outer:nth-child(1) {
-    transform: translate(-80%, 60%) rotate(8deg);
+    transform: translate(-40%, 30%) rotate(8deg);
 }
   
 .fancy:hover > .outer:nth-child(2) {
@@ -102,7 +123,7 @@ a {
 }
   
 .fancy:hover > .outer:nth-child(3) {
-    transform: translate(-10%, 60%) rotate(-6deg);
+    transform: translate(-10%, 40%) rotate(-6deg);
 }
   
 .fancy:hover > .outer:nth-child(4) {
@@ -118,27 +139,31 @@ a {
 }
   
 .fancy:hover > .outer:nth-child(7) {
-    transform: translate(0%, -40%) rotate(-5deg);
+    transform: translate(100%, -30%) rotate(-5deg);
 }
   
 .fancy:hover > .outer:nth-child(8) {
-    transform: translate(0%, 15%) rotate(10deg);
+    transform: translate(120%, 15%) rotate(10deg);
 }
   
 .fancy:hover > .outer:nth-child(9) {
-    transform: translate(0%, -50%) rotate(8deg);
+    transform: translate(120%, -10%) rotate(8deg);
 }
   
 .fancy:hover > .outer:nth-child(10) {
-    transform: translate(0%, 15%) rotate(-6deg);
+    transform: translate(80%, 15%) rotate(-6deg);
 }
   
 .fancy:hover > .outer:nth-child(11) {
-    transform: translate(50%, -10%) rotate(-3deg);
+    transform: translate(110%, -10%) rotate(-3deg);
 }
   
 .fancy:hover > .outer:nth-child(12) {
     transform: translate(120%, -30%) rotate(-10deg);
+}
+
+.fancy:hover > .outer:nth-child(13) {
+    transform: translate(130%, 20%) rotate(-5deg);
 }
   
 /* -- YouTube Link Styles -- */
