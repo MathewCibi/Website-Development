@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   enhance("channel_link");
-  console.log('Working')
 }, false);
 
 

@@ -58,7 +58,7 @@ body {
     height: 100vh;
     background-color: black;
     margin: 0rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: grid;
     place-items: center;
 }
@@ -219,4 +219,19 @@ body.menu-toggled > .meta-link > span {
     color: white;
     font-family: "Rubik", sans-serif;
     font-weight: 500;
+}
+
+.body {
+    position: relative;
+    top: 120px;
+    right: 500px;
+}
+
+.body h1 {
+    color: white;
+    font-size: clamp(2rem, 4vw, 10rem);
+    font-family: "Rubik", sans-serif;
+    margin: 0rem;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
