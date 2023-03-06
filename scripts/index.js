@@ -7,6 +7,11 @@ window.addEventListener('load', function () {
     const element = document.getElementById(id),
           text = element.innerText.split("");
           console.log(text)
+document.addEventListener('DOMContentLoaded', function() {
+  const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+  const enhance = id => {
+    const element = document.getElementById(id),
+          text = element.innerText.split("");
     
     element.innerText = "";
     
@@ -36,11 +41,15 @@ window.addEventListener('load', function () {
       element.appendChild(outer);
     });
     
-    
   }
 
   enhance("channel_link");
 })
 
+
+  }
+  
+  enhance("channel_link");
+}, false);
 
 

@@ -30,14 +30,35 @@
 }
 
 #title {
-    text-decoration: underline;
+    text-decoration: none;
 }
   
+#underline {
+    display: inline-block;
+    padding-bottom: 0.25rem; /* defines the space between text and underline */
+    position: relative;
+}
+
+#underline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 10%;
+    background-color: rgb(0, 255, 0);
+    transition: width 0.25s ease-out;
+}
+
+#underline:hover::before {
+    width: 100%;
+}
+    
 body {
     height: 100vh;
     background-color: black;
     margin: 0rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: grid;
     place-items: center;
 }
@@ -94,7 +115,7 @@ a {
 }
   
 .fancy:hover > .outer:nth-child(1) {
-    transform: translate(-80%, 60%) rotate(8deg);
+    transform: translate(-40%, 30%) rotate(8deg);
 }
   
 .fancy:hover > .outer:nth-child(2) {
@@ -102,7 +123,7 @@ a {
 }
   
 .fancy:hover > .outer:nth-child(3) {
-    transform: translate(-10%, 60%) rotate(-6deg);
+    transform: translate(-10%, 40%) rotate(-6deg);
 }
   
 .fancy:hover > .outer:nth-child(4) {
@@ -118,23 +139,23 @@ a {
 }
   
 .fancy:hover > .outer:nth-child(7) {
-    transform: translate(0%, -40%) rotate(-5deg);
+    transform: translate(100%, -30%) rotate(-5deg);
 }
   
 .fancy:hover > .outer:nth-child(8) {
-    transform: translate(0%, 15%) rotate(10deg);
+    transform: translate(120%, 15%) rotate(10deg);
 }
   
 .fancy:hover > .outer:nth-child(9) {
-    transform: translate(0%, -50%) rotate(8deg);
+    transform: translate(120%, -10%) rotate(8deg);
 }
   
 .fancy:hover > .outer:nth-child(10) {
-    transform: translate(0%, 15%) rotate(-6deg);
+    transform: translate(80%, 15%) rotate(-6deg);
 }
   
 .fancy:hover > .outer:nth-child(11) {
-    transform: translate(50%, -10%) rotate(-3deg);
+    transform: translate(110%, -10%) rotate(-3deg);
 }
   
 .fancy:hover > .outer:nth-child(12) {
@@ -148,6 +169,10 @@ a {
 .fancy:hover > .outer:nth-child(14) {
     transform: translate(100%, -40%) rotate(-5deg);
 }
+
+.fancy:hover > .outer:nth-child(13) {
+    transform: translate(130%, 20%) rotate(-5deg);
+}
   
 /* -- YouTube Link Styles -- */
   
@@ -158,48 +183,31 @@ body.menu-toggled > .meta-link > span {
 #source-link {
     bottom: 60px;
 }
-  
-#source-link > i {
-    color: rgb(94, 106, 210);
-}
-  
-#yt-link > i {
-    color: rgb(239, 83, 80);
-}
-  
-.meta-link {
-    align-items: center;
-    backdrop-filter: blur(3px);
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
-    bottom: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-    cursor: pointer;  
-    display: inline-flex;
-    gap: 5px;
-    left: 10px;
-    padding: 10px 20px;
-    position: fixed;
-    text-decoration: none;
-    transition: background-color 400ms, border-color 400ms;
-    z-index: 10000;
+
+section {
+    height: 100vh;
+    background-color: black;
+    margin: 0rem;
+    /* overflow: hidden; */
+    display: grid;
+    place-items: center;
 }
 
+.body {
+    height: 100vh;
+    background-color: black;
+    margin: 0rem;
+    /* overflow: hidden; */
+    display: grid;
+    place-items: center;
+}
 
-  
-.meta-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-  
-.meta-link > i, .meta-link > span {
-    height: 20px;
-    line-height: 20px;
-}
-  
-.meta-link > span {
+.body h1 {
     color: white;
+    font-size: clamp(2rem, 4vw, 10rem);
     font-family: "Rubik", sans-serif;
-    font-weight: 500;
+    margin: 0rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: right;
 }
