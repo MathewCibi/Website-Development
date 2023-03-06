@@ -1,12 +1,4 @@
 
-const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-
-window.addEventListener('load', function () {
-  const enhance = id => {
-    console.log(document.getElementById("channel_link"))
-    const element = document.getElementById(id),
-          text = element.innerText.split("");
-          console.log(text)
 document.addEventListener('DOMContentLoaded', function() {
   const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
   const enhance = id => {
@@ -45,11 +37,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
   enhance("channel_link");
 })
-
-
-  }
-  
-  enhance("channel_link");
-}, false);
-
-

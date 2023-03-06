@@ -7,8 +7,6 @@
     --blue: rgb(41, 121, 255);
 }
 
-
-
 @keyframes float {
     from, to {
         transform: translateY(-0%);
@@ -31,6 +29,8 @@
 
 #title {
     text-decoration: none;
+    font-weight: 600;
+    color: #e8e5ea;
 }
   
 #underline {
@@ -56,7 +56,7 @@
     
 body {
     height: 100vh;
-    background-color: black;
+    background-color: #0d0708;
     margin: 0rem;
     /* overflow: hidden; */
     display: grid;
@@ -69,12 +69,19 @@ body {
 }
   
 .word {
-    color: white;
+    /* color: #1b233f; Space Cadet*/
+    color: #495fab;
     font-size: clamp(2rem, 8vw, 10rem);
     font-family: "Rubik", sans-serif;
     margin: 0rem;
     text-transform: uppercase;
     transition: opacity 250ms ease;
+}
+
+#chestnut {
+    color: #954535;
+    font-weight: 600;
+    letter-spacing: 50px;
 }
   
 a {
@@ -139,7 +146,7 @@ a {
 }
   
 .fancy:hover > .outer:nth-child(7) {
-    transform: translate(100%, -30%) rotate(-5deg);
+    transform: translate(100%, -20%) rotate(-5deg);
 }
   
 .fancy:hover > .outer:nth-child(8) {
@@ -155,38 +162,21 @@ a {
 }
   
 .fancy:hover > .outer:nth-child(11) {
-    transform: translate(110%, -10%) rotate(-3deg);
+    transform: translate(90%, -10%) rotate(-3deg);
 }
   
 .fancy:hover > .outer:nth-child(12) {
-    transform: translate(80%, -30%) rotate(-10deg);
+    transform: translate(90%, -30%) rotate(-10deg);
 }
 
 .fancy:hover > .outer:nth-child(13) {
-    transform: translate(80%, 20%) rotate(-10deg);
+    transform: translate(90%, 10%) rotate(5deg);
 }
 
-.fancy:hover > .outer:nth-child(14) {
-    transform: translate(100%, -40%) rotate(-5deg);
-}
-
-.fancy:hover > .outer:nth-child(13) {
-    transform: translate(130%, 20%) rotate(-5deg);
-}
-  
-/* -- YouTube Link Styles -- */
-  
-body.menu-toggled > .meta-link > span {
-    color: rgb(30, 30, 30);
-}
-  
-#source-link {
-    bottom: 60px;
-}
 
 section {
     height: 100vh;
-    background-color: black;
+    background-color: #0d0708;
     margin: 0rem;
     /* overflow: hidden; */
     display: grid;
@@ -195,7 +185,7 @@ section {
 
 .body {
     height: 100vh;
-    background-color: black;
+    background-color: #0d0708;
     margin: 0rem;
     /* overflow: hidden; */
     display: grid;
