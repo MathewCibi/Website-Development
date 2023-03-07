@@ -82,8 +82,7 @@ body {
     color: #954535;
     font-weight: 600;
     display: inline-block;
-    text-align: center;
-    letter-spacing: 5vh;
+    text-align: justify;
 }
   
 a {
