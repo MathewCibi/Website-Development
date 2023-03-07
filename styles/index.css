@@ -81,7 +81,9 @@ body {
 #chestnut {
     color: #954535;
     font-weight: 600;
-    letter-spacing: 50px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 5vh;
 }
   
 a {
