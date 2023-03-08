@@ -83,8 +83,34 @@ body {
     font-weight: 600;
     display: inline-block;
     text-align: justify;
+    font-family: "Rubik", sans-serif;
 }
-  
+
+.chestnut_wrapper{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+#a {
+    font-family: "Rubik", serif;
+}
+
+#line2 {
+    font-size: clamp(2rem, 6vw, 8rem);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.stretch_it{
+    white-space: nowrap;
+}
+.justify{
+    text-align:justify;
+}
+
 a {
     text-decoration: none;
 }
