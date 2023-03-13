@@ -272,9 +272,11 @@ section {
 }
 
 #box_b div {
-    background-image: url("img3.png");
+    background-image: url("parallax.gif");
     background-size: cover;
     height: 100%;
     border-radius: 5px;
     width: 100%;
+    overflow: hidden;
 }
+
